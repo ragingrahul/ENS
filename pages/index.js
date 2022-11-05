@@ -75,7 +75,9 @@ export default function Home() {
   */
   const renderButton = () => {
     if (walletConnected) {
-      <div>Wallet connected</div>;
+      return(
+        <div>Wallet connected</div>
+      )
     } else {
       return (
         <button onClick={connectWallet} className={styles.button}>
